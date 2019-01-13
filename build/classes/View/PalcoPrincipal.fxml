@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="1010.0" stylesheets="@../Estilo/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PalcoPrincipalController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arquivo">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Salvar" text="Salvar" />
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Janela">
+               <items>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#cadastrados" text="Cadastrados" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#NovaPessoa" text="Nova Pessoa" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="30.0" prefWidth="1010.0" styleClass="background" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutY="1.0" prefHeight="30.0" prefWidth="1010.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="295.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="357.0" text="Criado por: Pedro Marinho" />
+                  <Label alignment="CENTER" prefHeight="19.0" prefWidth="309.0" text="Gmail: pedro.marinho238@gmail.com" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER" prefHeight="19.0" prefWidth="243.0" text="Twitter: @Pedro_ERMarinho" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="171.0" text="Eirunepe-AM" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
